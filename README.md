@@ -20,9 +20,9 @@ The code is designed for **post-critically finite (PCF)** and general rational m
 ## Mathematical Background
 
 Let  
-\[
+$$
 f : \mathbb{P}^1(\mathbb{C}) \to \mathbb{P}^1(\mathbb{C})
-\]
+$$
 be a rational map.
 
 Key objects computed in this project:
@@ -122,6 +122,6 @@ The automaton supports:
 - Visualization via `networkx`
 
 ## Todo list:
-[] Draw automata associated with a PDF
-[] Define Wreath Product class
-[] Compute the generators of the iterated monodromy groups
+[ ] Draw automata associated with a PDF
+[ ] Define Wreath Product class
+[ ] Compute the generators of the iterated monodromy groups
