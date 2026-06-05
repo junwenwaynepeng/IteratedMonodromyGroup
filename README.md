@@ -1,127 +1,128 @@
-# Iterated Monodromy Group & Automata for Rational Maps
+# Iterated Monodromy Groups and the Spider Algorithm
 
-> Computational tools for tracking inverse branches of rational maps, computing monodromy permutations around critical values, and constructing associated automata.
+This repository contains experimental code and notes for computing **iterated monodromy groups** associated with post-critically finite maps in arithmetic and complex dynamics.
 
----
+The main goal is to develop a combinatorial and algorithmic approach to automate part of the **spider algorithm**. In particular, the project studies how path lifting, finite automata, and graph-theoretic structures can be used to describe the monodromy action on the tree of iterated preimages.
 
-## Overview
+## Project Information
 
-This project provides a computational framework for **complex and arithmetic dynamics**, focused on:
+**Project Name:**
+算術動態系統內的問題 - Tits代替理論與相關的伽洛瓦群
+*Problems in arithmetic dynamics - Tits alternative and relative Galois group*
 
-- Tracking **inverse branches** of a rational function along controlled paths
-- Computing **monodromy permutations** associated to critical values
-- Constructing **finite automata** encoding symbolic dynamics and monodromy relations
-- Visualizing inverse-branch continuation and branch interactions
+**Project Number:**
+113-2115-M-008-012-MY3
 
-The code is designed for **post-critically finite (PCF)** and general rational maps, with special handling of **∞ via conjugation** when the map is polynomial.
+**Project Period:**
+2025-2027
 
----
+**Report Period:**
+June 1, 2025 - May 31, 2026
+
+## Abstract
+
+This project studies problems in arithmetic dynamics, especially the Tits alternative, arboreal and relative Galois groups, and iterated monodromy groups of post-critically finite maps. During this period, we developed a combinatorial approach to automate the spider algorithm. By using path lifting and finite automata, we introduced the web graph and Lucas paths as tools for choosing suitable path systems. Preliminary results suggest that certain local graph conditions can help construct good spiders and compute iterated monodromy actions effectively.
+
+## 中文摘要
+
+本計畫研究算術動態系統中的問題，特別是 Tits 代替理論、樹狀與相對伽洛瓦群，以及後臨界有限映射的迭代單值群。本年度主要發展一套組合方法來自動化 spider algorithm。透過路徑提升與有限自動機，我們引入 web graph 與 Lucas paths 作為選取合適路徑系統的工具。初步結果顯示，某些局部圖論條件可用來建構 good spiders，並有效計算迭代單值群的作用。
+
+## Keywords
+
+Arithmetic dynamics; Tits alternative; arboreal Galois representations; relative Galois groups; post-critically finite maps; iterated monodromy groups; spider algorithm; finite automata.
+
+## 中文關鍵詞
+
+算術動態系統；Tits 代替理論；樹狀伽洛瓦表示；相對伽洛瓦群；後臨界有限映射；迭代單值群；spider algorithm；有限自動機。
 
 ## Mathematical Background
 
-Let  
-```math
-f : \mathbb{P}^1(\mathbb{C}) \to \mathbb{P}^1(\mathbb{C})
-```
-be a rational map.
+Let \( f \) be a rational map. The iterated preimages of a base point form a rooted tree. The fundamental group of the punctured sphere acts on this tree by path lifting. For a post-critically finite map, this action gives the **iterated monodromy group**.
 
-Key objects computed in this project:
+The spider algorithm gives a way to choose paths from a base point to the post-critical set. These paths determine generators of the fundamental group and allow us to compute recursive relations of the form
 
-- **Critical points** \( C_f \)
-- **Critical values** \( P_f = f(C_f) \), closed under iteration
-- **Inverse branches** continued along homotopy-controlled paths
-- **Monodromy permutations** acting on preimages of a base point
-- **Automata** encoding symbolic transition/output relations
+$$\texttt{q.x = y.p}$$
 
-This framework supports experimentation related to:
+where:
 
-- Iterated monodromy groups
-- Thurston theory
-- Arboreal representations
-- Symbolic dynamics of rational maps
+* `q` and `p` are states of an automaton,
+* `x` and `y` are letters in the alphabet,
+* the relation describes how a generator acts on the first level of the preimage tree.
 
----
+## Main Features
 
-## Features
+This notebook includes experimental code for:
 
-- Inverse branch continuation via Newton refinement  
-- Path deformation avoiding post-critical values  
-- Greedy matching of inverse branches between steps  
-- Automatic handling of infinity via conjugation \( x \mapsto 1/f(1/x) \)  
-- Permutation extraction from circular ordering of preimages  
-- Finite automaton construction and validation  
-- Visualization of inverse branches and automaton graphs  
+* defining finite automata;
+* computing monodromy generators;
+* tracking inverse branches along paths;
+* constructing graph models from lifted spider paths;
+* searching for good spiders;
+* converting graph data into automaton relations.
 
----
+## Main Objects
+
+### Automaton
+
+An automaton over an alphabet \( X \) is a triple
+
+$$
+\langle Q, \lambda, \pi \rangle,
+$$
+
+where:
+
+* \( Q \) is the set of states;
+* \( \lambda: Q \times X \to X \) is the output function;
+* \( \pi: Q \times X \to Q \) is the transition function.
+
+The automaton is finite if \( Q \) is finite.
+
+### Web Graph
+
+The **web graph** is constructed from inverse images of spider legs. It records the combinatorial information needed to understand how lifted paths move among preimages and post-critical points.
+
+### Lucas Paths / Good Spiders
+
+A collection of paths is called a system of **Lucas paths**, or a **good spider**, if the lifted monodromy loops can be represented using a finite set of standard generators. This condition is designed to make the iterated monodromy action computable by a finite automaton.
 
 ## Requirements
 
-- **SageMath** (tested with Sage ≥ 10)
-- Python packages:
-  - `networkx`
-  - `matplotlib`
-  - `numpy`
+The notebook uses SageMath-style syntax and depends on packages such as:
 
----
-
-## Quick Start
-
-### Define the map and base point
-
-```python
-x = var('x')
-f = -4*x^3 + 6*x^2 - 1/2
-base_point = 1 + I
-generators, label2index, crit_points, crit_values = permutation_form(
-    f,
-    base_point,
-    steps=10
-)
+```text
+SageMath
+matplotlib
+networkx
+numpy
 ```
-Returns:
-- generators: dictionary mapping critical values (and ∞) to permutations
-- label2index: stable labeling of inverse branches
-- crit_points: critical points of f
-- crit_values: post-critical set, closed under iteration
 
-```python
-figs = preimage_path_plots(
-    f,
-    base_point,
-    steps=40,
-    include_infty=True
-)
+It is recommended to run the notebook with a SageMath Jupyter kernel.
 
-figs['infty'].show()
+## Files
+
+```text
+IteratedMonodromyGroup.ipynb
 ```
-Each plot shows:
-- Colored inverse branches
-- The continuation path
-- Critical values (optional)
 
-```python
-automaton = Automaton()
-string_list = [
-    'a.0=1.b',
-    'a.1=0.c',
-    'b.0=1.c',
-    'b.1=0.a',
-    'c.0=0.c',
-    'c.1=1.c'
-]
-automaton.from_string_list(string_list)
+This notebook contains the main experimental implementation.
 
-print(automaton.is_valid())
-print(automaton.is_irreducible())
-automaton.graph()
-```
-The automaton supports:
-- Validity checks
-- Invertibility checks
-- Irreducibility testing
-- Visualization via `networkx`
+## Current Status
 
-## Todo list:
-- [ ] Draw automata associated with a PDF
-- [ ] Define Wreath Product class
-- [ ] Compute the generators of the iterated monodromy groups
+This is a research prototype. The code is intended for experimentation with post-critically finite maps, spider graphs, and iterated monodromy groups. Some parts are still under development, especially the general search procedure for good spiders and the conversion from web graph data to automaton relations.
+
+## Future Work
+
+Planned next steps include:
+
+* completing the graph-theoretic criterion for good spiders;
+* improving the implementation of the web graph construction;
+* testing the method on more degree-two and degree-three PCF maps;
+* comparing the computed automata with known iterated monodromy groups;
+* preparing the results for a research article.
+
+## Author
+
+Wayne Peng
+Department of Applied Mathematics
+National University of Kaohsiung
