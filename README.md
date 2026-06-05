@@ -37,7 +37,7 @@ Arithmetic dynamics; Tits alternative; arboreal Galois representations; relative
 
 ## Mathematical Background
 
-Let \( f \) be a rational map. The iterated preimages of a base point form a rooted tree. The fundamental group of the punctured sphere acts on this tree by path lifting. For a post-critically finite map, this action gives the **iterated monodromy group**.
+Let $f$ be a rational map. The iterated preimages of a base point form a rooted tree. The fundamental group of the punctured sphere acts on this tree by path lifting. For a post-critically finite map, this action gives the **iterated monodromy group**.
 
 The spider algorithm gives a way to choose paths from a base point to the post-critical set. These paths determine generators of the fundamental group and allow us to compute recursive relations of the form
 
@@ -64,7 +64,7 @@ This notebook includes experimental code for:
 
 ### Automaton
 
-An automaton over an alphabet \( X \) is a triple
+An automaton over an alphabet $X$ is a triple
 
 $$
 \langle Q, \lambda, \pi \rangle,
@@ -72,11 +72,11 @@ $$
 
 where:
 
-* \( Q \) is the set of states;
-* \( \lambda: Q \times X \to X \) is the output function;
-* \( \pi: Q \times X \to Q \) is the transition function.
+* $Q$ is the set of states;
+* $\lambda: Q \times X \to X$ is the output function;
+* $\pi: Q \times X \to Q$ is the transition function.
 
-The automaton is finite if \( Q \) is finite.
+The automaton is finite if $Q$ is finite.
 
 ### Web Graph
 
