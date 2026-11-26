@@ -40,3 +40,25 @@ The root-swap action has one generator of order two and trivial sections. Its fi
 `program_a/kh/` contains the presentation-to-certificate workflow, NEWTC guards, the native index adapter and independent replay. `program_a/n/` contains normal subgroup selection, insertion search, witness assembly and verification. `program_a/fr/` contains the native FR diagnostic. `program_a/shared/` holds action arithmetic, tuple operations and reusable proof routines. The [command dispatcher](program_a/__main__.py) selects the method.
 
 This is the single-action research edition derived from the KH6 release (scientific specification SHA-256 `e77aa6c22c5009eba2b47fbd9316b65254476979059ec726746f99104790dbe2`). The laboratory batch scheduler, storage ledger, dashboard, saved case pools and run traces are maintained separately. For reproducibility, record the action, pool, command, GAP/FR versions and Git commit alongside each result.
+
+## Shared subgroup input for KH and Index
+
+Both backends accept the same ordered pool of root-fixing parents and sections.
+Use a retained pool as supplied, or prepare one common input for both commands:
+
+```sh
+python3 -m program_a prepare-pool examples/root-swap.json examples/root-swap-pool.json > prepared.json
+python3 -m program_a kh examples/root-swap.json prepared.json
+python3 -m program_a index examples/root-swap.json --pool prepared.json > index.g
+```
+
+The shared [pool module](program_a/subgroup_pool.py) binds prepared pools to the
+action. It enumerates the finite root permutation group and takes sections of
+the Schreier generators of the first-level stabilizer. Successful exhaustion
+selects H. The construction ceilings are 4,096 root permutations, 65,536
+potential Schreier edges and 2,000,000 section letters. At a construction
+ceiling the original retained tuple list is returned as K with a reason.
+A supplied basis and its relators pass through to KH. Preparation alone
+does not check a cover certificate. KH verifies the tuples in Python, while
+the Index script verifies them in GAP. The separate `index --full-h` route
+constructs H inside GAP without reading a pool.

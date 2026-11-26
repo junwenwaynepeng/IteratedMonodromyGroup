@@ -1,17 +1,13 @@
 """Render Index(P,K) with P the faithful coordinate product."""
 
 from ..native_gamma import lit
-from ..shared.exact import validate_model, word, require
+from ..subgroup_pool import checked_rows
 from ..fr import prefix
 
 
 def render(packet, tuples=None):
-    _, rank, degree = validate_model(packet)
-    for row in tuples or []:
-        word(row["parent_word"], rank)
-        require(len(row["sections"]) == degree, "tuple degree")
-        for section in row["sections"]:
-            word(section, rank)
+    if tuples is not None:
+        checked_rows(packet, tuples)
     source = prefix(packet)
     source += """PAEvent("PRODUCT_AMBIENT_ENTER");;
     PAEmbeddedGenerators:=Concatenation(List([1..D],x->List(S,g->VertexElement(x,g))));;

@@ -10,6 +10,7 @@ from .contracts import pin
 from .kh import cover, index
 from .n.engine import run
 from .shared.exact import Limit
+from . import subgroup_pool
 
 
 def read(path):
@@ -20,6 +21,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     methods = parser.add_subparsers(required=True, dest="method")
     for name, help_text in [
+        (
+            "prepare-pool",
+            "build the full stabilizer image or reuse the retained pool at a construction bound",
+        ),
         ("kh", "enumerate a direct-image cover and replay its certificate"),
         ("replay", "check a saved KH certificate with two interpreters"),
         ("n", "search for a normal cover and supported lifts"),
@@ -28,8 +33,9 @@ def main():
     ]:
         command = methods.add_parser(name, help=help_text)
         command.add_argument("action", type=Path)
-        if name == "kh":
+        if name in ("kh", "prepare-pool"):
             command.add_argument("pool", type=Path)
+        if name == "kh":
             command.add_argument("--cosets", type=int, default=4096)
             command.add_argument(
                 "--seconds", type=int, default=60, help="NEWTC subprocess timeout"
@@ -50,13 +56,22 @@ def main():
     if not __debug__:
         parser.error("run Python without -O to enable proof checks")
     action = load(pin(args.action))
+    if args.method == "prepare-pool":
+        print(
+            json.dumps(subgroup_pool.prepare(action.packet, read(args.pool)), indent=2)
+        )
+        return 0
     if args.method in ("index", "fr"):
         source = (
             fr.render(action.packet)
             if args.method == "fr"
             else index.render(
                 action.packet,
-                read(args.pool)["tuple_generators"] if args.pool else None,
+                (
+                    subgroup_pool.bound_rows(action.packet, read(args.pool))
+                    if args.pool
+                    else None
+                ),
             )
         )
         print(source, end="")

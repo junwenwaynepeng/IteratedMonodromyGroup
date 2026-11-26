@@ -9,6 +9,7 @@ from ..shared import checker, felsch
 from ..shared.config import normalize
 from ..shared.exact import Action, expand, require, word
 from ..shared.tuples import TupleImage
+from ..subgroup_pool import pool_rows
 from . import newtc, raw
 
 
@@ -58,13 +59,13 @@ def solve(packet, pool, *, cosets=4096, seconds=60):
         relation = word(w, len(basis))
         require(action.identity(expand(relation, basis)), "invalid input relator")
         image.relations.append(relation)
-    for row in pool["tuple_generators"]:
-        parent = word(row["parent_word"], action.q)
+    for row in pool_rows(packet, pool):
+        parent = row["parent_word"]
         permutation, sections = action.wreath(parent)
         require(permutation == tuple(range(action.d)), "parent moves root")
-        claimed = [word(w, action.q) for w in row["sections"]]
+        claimed = row["sections"]
         require(
-            len(claimed) == action.d and action.tuple_equal(sections, claimed),
+            action.tuple_equal(sections, claimed),
             "incorrect sections",
         )
         image.T.append({"parent_word": parent, "sections": sections})
