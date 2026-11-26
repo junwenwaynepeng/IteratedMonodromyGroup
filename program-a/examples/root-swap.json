@@ -1,0 +1,18 @@
+{
+  "map_id": "example-root-swap",
+  "table_sha256": "8dbb368faaafb780420108916c8986b3ca420f016fb7675f17f136feea7056e2",
+  "model": {
+    "roots": [
+      [
+        1,
+        0
+      ]
+    ],
+    "sections": [
+      [
+        0,
+        0
+      ]
+    ]
+  }
+}

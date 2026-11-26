@@ -1,4 +1,8 @@
-# Iterated Monodromy Groups and the Spider Algorithm
+# Iterated Monodromy Groups
+
+[Program A — methods, input formats and runnable examples](program-a/README.md)
+
+## Spider algorithm notebook and research notes
 
 This repository contains experimental code and notes for computing **iterated monodromy groups** associated with post-critically finite maps in arithmetic and complex dynamics.
 
