@@ -1,0 +1,254 @@
+<svg width="819pt" height="738pt"
+ viewBox="0.00 0.00 819.28 738.28" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(8.64 729.64)">
+<title>%3</title>
+<!-- input -->
+<g id="node1" class="node">
+<title>input</title>
+<g id="a_node1"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L8" xlink:title="&lt;B&gt;既有池：檢查 action 與 tuple 格式&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L8–28&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M449,-721C449,-721 255,-721 255,-721 249,-721 243,-715 243,-709 243,-709 243,-697 243,-697 243,-691 249,-685 255,-685 255,-685 449,-685 449,-685 455,-685 461,-691 461,-697 461,-697 461,-709 461,-709 461,-715 455,-721 449,-721"/>
+<text text-anchor="start" x="252" y="-705.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">既有池：檢查 action 與 tuple 格式</text>
+<text text-anchor="start" x="289" y="-694.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L8–28</text>
+</a>
+</g>
+</g>
+<!-- sch -->
+<g id="node2" class="node">
+<title>sch</title>
+<g id="a_node2"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L35" xlink:title="&lt;B&gt;prepare&#45;pool：列舉有限根商&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L35–50&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M374,-646C374,-646 208,-646 208,-646 202,-646 196,-640 196,-634 196,-634 196,-622 196,-622 196,-616 202,-610 208,-610 208,-610 374,-610 374,-610 380,-610 386,-616 386,-622 386,-622 386,-634 386,-634 386,-640 380,-646 374,-646"/>
+<text text-anchor="start" x="205" y="-630.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">prepare&#45;pool：列舉有限根商</text>
+<text text-anchor="start" x="225.5" y="-619.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L35–50</text>
+</a>
+</g>
+</g>
+<!-- input&#45;&gt;sch -->
+<g id="edge1" class="edge">
+<title>input&#45;&gt;sch</title>
+<path fill="none" stroke="#788690" d="M329.61,-684.69C324.84,-680.48 320.03,-675.8 316,-671 311.15,-665.23 306.66,-658.41 302.86,-651.96"/>
+<polygon fill="#788690" stroke="#788690" points="304.77,-650.71 299.57,-646.18 300.81,-652.96 304.77,-650.71"/>
+<text text-anchor="middle" x="358" y="-663" font-family="Noto Sans CJK TC" font-size="10.00">選用 prepare&#45;pool</text>
+</g>
+<!-- t -->
+<g id="node7" class="node">
+<title>t</title>
+<g id="a_node7"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L8" xlink:title="&lt;B&gt;共用有序 tuple：S = ⟨T⟩ ≤ H&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L8–28&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M383.5,-326C383.5,-326 220.5,-326 220.5,-326 214.5,-326 208.5,-320 208.5,-314 208.5,-314 208.5,-302 208.5,-302 208.5,-296 214.5,-290 220.5,-290 220.5,-290 383.5,-290 383.5,-290 389.5,-290 395.5,-296 395.5,-302 395.5,-302 395.5,-314 395.5,-314 395.5,-320 389.5,-326 383.5,-326"/>
+<text text-anchor="start" x="217.5" y="-310.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">共用有序 tuple：S = ⟨T⟩ ≤ H</text>
+<text text-anchor="start" x="239" y="-299.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L8–28</text>
+</a>
+</g>
+</g>
+<!-- input&#45;&gt;t -->
+<g id="edge9" class="edge">
+<title>input&#45;&gt;t</title>
+<path fill="none" stroke="#788690" d="M385.44,-684.67C390.85,-680.74 395.99,-676.17 400,-671 412.06,-655.45 414,-648.68 414,-629 414,-629 414,-629 414,-372 414,-352.16 400.48,-338.5 382.83,-329.12"/>
+<polygon fill="#788690" stroke="#788690" points="383.54,-326.93 376.71,-326.1 381.53,-331.01 383.54,-326.93"/>
+<text text-anchor="middle" x="443.5" y="-513" font-family="Noto Sans CJK TC" font-size="10.00">直接使用舊池</text>
+</g>
+<!-- gen -->
+<g id="node3" class="node">
+<title>gen</title>
+<g id="a_node3"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L52" xlink:title="&lt;B&gt;求穩定子的 Schreier 生成字及 sections&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L52–68&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M255.5,-571C255.5,-571 30.5,-571 30.5,-571 24.5,-571 18.5,-565 18.5,-559 18.5,-559 18.5,-547 18.5,-547 18.5,-541 24.5,-535 30.5,-535 30.5,-535 255.5,-535 255.5,-535 261.5,-535 267.5,-541 267.5,-547 267.5,-547 267.5,-559 267.5,-559 267.5,-565 261.5,-571 255.5,-571"/>
+<text text-anchor="start" x="27.5" y="-555.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">求穩定子的 Schreier 生成字及 sections</text>
+<text text-anchor="start" x="77.5" y="-544.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L52–68</text>
+</a>
+</g>
+</g>
+<!-- sch&#45;&gt;gen -->
+<g id="edge2" class="edge">
+<title>sch&#45;&gt;gen</title>
+<path fill="none" stroke="#788690" d="M256.3,-609.88C234.5,-599.13 206.28,-585.21 183.46,-573.96"/>
+<polygon fill="#788690" stroke="#788690" points="184.32,-571.84 177.48,-571.01 182.31,-575.92 184.32,-571.84"/>
+<text text-anchor="middle" x="246" y="-588" font-family="Noto Sans CJK TC" font-size="10.00">根商完成</text>
+</g>
+<!-- decision -->
+<g id="node4" class="node">
+<title>decision</title>
+<g id="a_node4"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L73" xlink:title="&lt;B&gt;完整生成？&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L73–79&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M211.28,-493.41C211.28,-493.41 85.72,-465.59 85.72,-465.59 79.86,-464.3 79.86,-461.7 85.72,-460.41 85.72,-460.41 211.28,-432.59 211.28,-432.59 217.14,-431.3 228.86,-431.3 234.72,-432.59 234.72,-432.59 360.28,-460.41 360.28,-460.41 366.14,-461.7 366.14,-464.3 360.28,-465.59 360.28,-465.59 234.72,-493.41 234.72,-493.41 228.86,-494.7 217.14,-494.7 211.28,-493.41"/>
+<text text-anchor="start" x="191" y="-465.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">完整生成？</text>
+<text text-anchor="start" x="157.5" y="-454.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L73–79</text>
+</a>
+</g>
+</g>
+<!-- sch&#45;&gt;decision -->
+<g id="edge3" class="edge">
+<title>sch&#45;&gt;decision</title>
+<path fill="none" stroke="#788690" d="M290.62,-609.71C289.65,-590.69 286.43,-559.58 276,-535 270.11,-521.13 260.96,-507.47 251.92,-495.9"/>
+<polygon fill="#788690" stroke="#788690" points="253.62,-494.38 247.78,-490.73 250.07,-497.23 253.62,-494.38"/>
+<text text-anchor="middle" x="321.5" y="-550.5" font-family="Noto Sans CJK TC" font-size="10.00">根商／邊數上限</text>
+</g>
+<!-- gen&#45;&gt;decision -->
+<g id="edge4" class="edge">
+<title>gen&#45;&gt;decision</title>
+<path fill="none" stroke="#788690" d="M158.81,-534.61C168.86,-523.56 182.17,-508.91 194.07,-495.83"/>
+<polygon fill="#788690" stroke="#788690" points="196.03,-497.05 198.72,-490.71 192.66,-493.99 196.03,-497.05"/>
+<text text-anchor="middle" x="215.5" y="-513" font-family="Noto Sans CJK TC" font-size="10.00">完成或字母上限</text>
+</g>
+<!-- h -->
+<g id="node5" class="node">
+<title>h</title>
+<g id="a_node5"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L78" xlink:title="&lt;B&gt;H：採用完整 Schreier tuple 池&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L78–85&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M188,-391C188,-391 12,-391 12,-391 6,-391 0,-385 0,-379 0,-379 0,-367 0,-367 0,-361 6,-355 12,-355 12,-355 188,-355 188,-355 194,-355 200,-361 200,-367 200,-367 200,-379 200,-379 200,-385 194,-391 188,-391"/>
+<text text-anchor="start" x="9" y="-375.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">H：採用完整 Schreier tuple 池</text>
+<text text-anchor="start" x="34.5" y="-364.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L78–85</text>
+</a>
+</g>
+</g>
+<!-- decision&#45;&gt;h -->
+<g id="edge5" class="edge">
+<title>decision&#45;&gt;h</title>
+<path fill="none" stroke="#788690" d="M188.74,-437.49C170.06,-424.12 147.17,-407.75 129.32,-394.98"/>
+<polygon fill="#788690" stroke="#788690" points="130.57,-393.07 123.96,-391.14 127.92,-396.77 130.57,-393.07"/>
+<text text-anchor="middle" x="163" y="-408" font-family="Noto Sans CJK TC" font-size="10.00">是</text>
+</g>
+<!-- k -->
+<g id="node6" class="node">
+<title>k</title>
+<g id="a_node6"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/subgroup_pool.py#L76" xlink:title="&lt;B&gt;K：保留輸入池與上限原因&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;subgroup_pool.py · L76–85&lt;/FONT&gt;">
+<path fill="#40596a" fill-opacity="0.047059" stroke="#40596a" d="M374,-391C374,-391 230,-391 230,-391 224,-391 218,-385 218,-379 218,-379 218,-367 218,-367 218,-361 224,-355 230,-355 230,-355 374,-355 374,-355 380,-355 386,-361 386,-367 386,-367 386,-379 386,-379 386,-385 380,-391 374,-391"/>
+<text text-anchor="start" x="227" y="-375.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#40596a">K：保留輸入池與上限原因</text>
+<text text-anchor="start" x="236.5" y="-364.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#40596a">subgroup_pool.py · L76–85</text>
+</a>
+</g>
+</g>
+<!-- decision&#45;&gt;k -->
+<g id="edge6" class="edge">
+<title>decision&#45;&gt;k</title>
+<path fill="none" stroke="#788690" d="M247.13,-435.12C258.41,-422.56 271.66,-407.79 282.32,-395.92"/>
+<polygon fill="#788690" stroke="#788690" points="284.07,-397.38 286.72,-391.03 280.68,-394.34 284.07,-397.38"/>
+<text text-anchor="middle" x="292" y="-408" font-family="Noto Sans CJK TC" font-size="10.00">構造達限</text>
+</g>
+<!-- h&#45;&gt;t -->
+<g id="edge7" class="edge">
+<title>h&#45;&gt;t</title>
+<path fill="none" stroke="#788690" d="M154.66,-354.95C181.27,-346.65 213.36,-336.64 240.79,-328.09"/>
+<polygon fill="#788690" stroke="#788690" points="241.76,-330.17 247.29,-326.06 240.41,-325.83 241.76,-330.17"/>
+</g>
+<!-- k&#45;&gt;t -->
+<g id="edge8" class="edge">
+<title>k&#45;&gt;t</title>
+<path fill="none" stroke="#788690" d="M302,-354.78C302,-347.98 302,-340.04 302,-332.71"/>
+<polygon fill="#788690" stroke="#788690" points="304.28,-332.69 302,-326.19 299.73,-332.69 304.28,-332.69"/>
+</g>
+<!-- kh -->
+<g id="node8" class="node">
+<title>kh</title>
+<g id="a_node8"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/kh/cover.py#L62" xlink:title="&lt;B&gt;KH / Python：重新驗證父詞及 sections&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;kh/cover.py · L62–71&lt;/FONT&gt;">
+<path fill="#086850" fill-opacity="0.047059" stroke="#086850" d="M289.5,-251C289.5,-251 60.5,-251 60.5,-251 54.5,-251 48.5,-245 48.5,-239 48.5,-239 48.5,-227 48.5,-227 48.5,-221 54.5,-215 60.5,-215 60.5,-215 289.5,-215 289.5,-215 295.5,-215 301.5,-221 301.5,-227 301.5,-227 301.5,-239 301.5,-239 301.5,-245 295.5,-251 289.5,-251"/>
+<text text-anchor="start" x="57.5" y="-235.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#086850">KH / Python：重新驗證父詞及 sections</text>
+<text text-anchor="start" x="125" y="-224.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#086850">kh/cover.py · L62–71</text>
+</a>
+</g>
+</g>
+<!-- t&#45;&gt;kh -->
+<g id="edge10" class="edge">
+<title>t&#45;&gt;kh</title>
+<path fill="none" stroke="#788690" d="M272.22,-289.88C253.75,-279.27 229.92,-265.57 210.47,-254.39"/>
+<polygon fill="#788690" stroke="#788690" points="211.36,-252.27 204.59,-251.01 209.09,-256.22 211.36,-252.27"/>
+<text text-anchor="middle" x="253" y="-268" font-family="Noto Sans CJK TC" font-size="10.00">kh</text>
+</g>
+<!-- ix -->
+<g id="node12" class="node">
+<title>ix</title>
+<g id="a_node12"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/kh/index.py#L23" xlink:title="&lt;B&gt;Index &#45;&#45;pool / GAP：重驗同一組 T&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;kh/index.py · L23–35&lt;/FONT&gt;">
+<path fill="#2868a2" fill-opacity="0.047059" stroke="#2868a2" d="M528,-251C528,-251 332,-251 332,-251 326,-251 320,-245 320,-239 320,-239 320,-227 320,-227 320,-221 326,-215 332,-215 332,-215 528,-215 528,-215 534,-215 540,-221 540,-227 540,-227 540,-239 540,-239 540,-245 534,-251 528,-251"/>
+<text text-anchor="start" x="329" y="-235.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#2868a2">Index &#45;&#45;pool / GAP：重驗同一組 T</text>
+<text text-anchor="start" x="379" y="-224.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#2868a2">kh/index.py · L23–35</text>
+</a>
+</g>
+</g>
+<!-- t&#45;&gt;ix -->
+<g id="edge11" class="edge">
+<title>t&#45;&gt;ix</title>
+<path fill="none" stroke="#788690" d="M332.01,-289.88C350.71,-279.22 374.86,-265.45 394.5,-254.25"/>
+<polygon fill="#788690" stroke="#788690" points="395.66,-256.2 400.18,-251.01 393.4,-252.25 395.66,-256.2"/>
+<text text-anchor="middle" x="401.5" y="-268" font-family="Noto Sans CJK TC" font-size="10.00">index &#45;&#45;pool</text>
+</g>
+<!-- enc -->
+<g id="node9" class="node">
+<title>enc</title>
+<g id="a_node9"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/shared/felsch.py#L27" xlink:title="&lt;B&gt;tuple → subgroup_generators&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;shared/felsch.py · L27–39&lt;/FONT&gt;">
+<path fill="#086850" fill-opacity="0.047059" stroke="#086850" d="M267,-176C267,-176 83,-176 83,-176 77,-176 71,-170 71,-164 71,-164 71,-152 71,-152 71,-146 77,-140 83,-140 83,-140 267,-140 267,-140 273,-140 279,-146 279,-152 279,-152 279,-164 279,-164 279,-170 273,-176 267,-176"/>
+<text text-anchor="start" x="80" y="-160.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#086850">tuple → subgroup_generators</text>
+<text text-anchor="start" x="113.5" y="-149.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#086850">shared/felsch.py · L27–39</text>
+</a>
+</g>
+</g>
+<!-- kh&#45;&gt;enc -->
+<g id="edge12" class="edge">
+<title>kh&#45;&gt;enc</title>
+<path fill="none" stroke="#788690" d="M175,-214.7C175,-205.15 175,-193.16 175,-182.75"/>
+<polygon fill="#788690" stroke="#788690" points="177.28,-182.68 175,-176.18 172.73,-182.68 177.28,-182.68"/>
+</g>
+<!-- new -->
+<g id="node10" class="node">
+<title>new</title>
+<g id="a_node10"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/kh/newtc.py#L65" xlink:title="&lt;B&gt;GAP 把生成字轉成 sub，送 NEWTC&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;kh/newtc.py · L65–70&lt;/FONT&gt;">
+<path fill="#086850" fill-opacity="0.047059" stroke="#086850" d="M275.5,-111C275.5,-111 74.5,-111 74.5,-111 68.5,-111 62.5,-105 62.5,-99 62.5,-99 62.5,-87 62.5,-87 62.5,-81 68.5,-75 74.5,-75 74.5,-75 275.5,-75 275.5,-75 281.5,-75 287.5,-81 287.5,-87 287.5,-87 287.5,-99 287.5,-99 287.5,-105 281.5,-111 275.5,-111"/>
+<text text-anchor="start" x="71.5" y="-95.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#086850">GAP 把生成字轉成 sub，送 NEWTC</text>
+<text text-anchor="start" x="123" y="-84.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#086850">kh/newtc.py · L65–70</text>
+</a>
+</g>
+</g>
+<!-- enc&#45;&gt;new -->
+<g id="edge13" class="edge">
+<title>enc&#45;&gt;new</title>
+<path fill="none" stroke="#788690" d="M175,-139.78C175,-132.98 175,-125.04 175,-117.71"/>
+<polygon fill="#788690" stroke="#788690" points="177.28,-117.69 175,-111.19 172.73,-117.69 177.28,-117.69"/>
+</g>
+<!-- verify -->
+<g id="node11" class="node">
+<title>verify</title>
+<g id="a_node11"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/kh/cover.py#L95" xlink:title="&lt;B&gt;解碼、封裝 → 整樹與獨立重播&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;kh/cover.py · L95–102&lt;/FONT&gt;">
+<path fill="#976319" fill-opacity="0.047059" stroke="#976319" d="M258,-36C258,-36 92,-36 92,-36 86,-36 80,-30 80,-24 80,-24 80,-12 80,-12 80,-6 86,0 92,0 92,0 258,0 258,0 264,0 270,-6 270,-12 270,-12 270,-24 270,-24 270,-30 264,-36 258,-36"/>
+<text text-anchor="start" x="89" y="-20.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#976319">解碼、封裝 → 整樹與獨立重播</text>
+<text text-anchor="start" x="122.5" y="-9.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#976319">kh/cover.py · L95–102</text>
+</a>
+</g>
+</g>
+<!-- new&#45;&gt;verify -->
+<g id="edge14" class="edge">
+<title>new&#45;&gt;verify</title>
+<path fill="none" stroke="#788690" d="M175,-74.7C175,-65.15 175,-53.16 175,-42.75"/>
+<polygon fill="#788690" stroke="#788690" points="177.28,-42.68 175,-36.18 172.73,-42.68 177.28,-42.68"/>
+<text text-anchor="middle" x="195" y="-53" font-family="Noto Sans CJK TC" font-size="10.00">成功匯出</text>
+</g>
+<!-- idx -->
+<g id="node14" class="node">
+<title>idx</title>
+<g id="a_node14"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/kh/index.py#L36" xlink:title="&lt;B&gt;Subgroup(P,KG) → Index(P,K_GAP)&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;kh/index.py · L36–44&lt;/FONT&gt;">
+<path fill="#2868a2" fill-opacity="0.047059" stroke="#2868a2" d="M717.5,-176C717.5,-176 502.5,-176 502.5,-176 496.5,-176 490.5,-170 490.5,-164 490.5,-164 490.5,-152 490.5,-152 490.5,-146 496.5,-140 502.5,-140 502.5,-140 717.5,-140 717.5,-140 723.5,-140 729.5,-146 729.5,-152 729.5,-152 729.5,-164 729.5,-164 729.5,-170 723.5,-176 717.5,-176"/>
+<text text-anchor="start" x="499.5" y="-160.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#2868a2">Subgroup(P,KG) → Index(P,K_GAP)</text>
+<text text-anchor="start" x="559" y="-149.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#2868a2">kh/index.py · L36–44</text>
+</a>
+</g>
+</g>
+<!-- ix&#45;&gt;idx -->
+<g id="edge15" class="edge">
+<title>ix&#45;&gt;idx</title>
+<path fill="none" stroke="#788690" d="M472.2,-214.88C499.06,-203.99 533.91,-189.86 561.85,-178.53"/>
+<polygon fill="#788690" stroke="#788690" points="562.89,-180.56 568.06,-176.01 561.18,-176.34 562.89,-180.56"/>
+<text text-anchor="middle" x="533.5" y="-193" font-family="Noto Sans CJK TC" font-size="10.00">S</text>
+</g>
+<!-- full -->
+<g id="node13" class="node">
+<title>full</title>
+<g id="a_node13"><a xlink:href="https://github.com/junwenwaynepeng/IteratedMonodromyGroup/blob/3d109382d4645093fabb505632eaacd50e24aa04/program-a/program_a/kh/index.py#L16" xlink:title="&lt;B&gt;Index &#45;&#45;full&#45;h：GAP 直接取穩定子像 H&lt;/B&gt;&lt;BR/&gt;&lt;FONT POINT&#45;SIZE=&quot;10&quot;&gt;kh/index.py · L16–22&lt;/FONT&gt;">
+<path fill="#2868a2" fill-opacity="0.047059" stroke="#2868a2" d="M790,-251C790,-251 570,-251 570,-251 564,-251 558,-245 558,-239 558,-239 558,-227 558,-227 558,-221 564,-215 570,-215 570,-215 790,-215 790,-215 796,-215 802,-221 802,-227 802,-227 802,-239 802,-239 802,-245 796,-251 790,-251"/>
+<text text-anchor="start" x="567" y="-235.1" font-family="Noto Sans CJK TC" font-weight="bold" font-size="13.00" fill="#2868a2">Index &#45;&#45;full&#45;h：GAP 直接取穩定子像 H</text>
+<text text-anchor="start" x="629" y="-224.5" font-family="Noto Sans CJK TC" font-size="10.00" fill="#2868a2">kh/index.py · L16–22</text>
+</a>
+</g>
+</g>
+<!-- full&#45;&gt;idx -->
+<g id="edge16" class="edge">
+<title>full&#45;&gt;idx</title>
+<path fill="none" stroke="#788690" d="M663.41,-214.7C653.73,-204.61 641.43,-191.78 631.08,-180.98"/>
+<polygon fill="#788690" stroke="#788690" points="632.61,-179.29 626.47,-176.18 629.33,-182.44 632.61,-179.29"/>
+<text text-anchor="middle" x="653" y="-193" font-family="Noto Sans CJK TC" font-size="10.00">H</text>
+</g>
+</g>
+</svg>

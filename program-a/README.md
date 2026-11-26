@@ -43,6 +43,8 @@ This is the single-action research edition derived from the KH6 release (scienti
 
 ## Shared subgroup input for KH and Index
 
+[Flowchart and source-line map](docs/README.md)
+
 Both backends accept the same ordered pool of root-fixing parents and sections.
 Use a retained pool as supplied, or prepare one common input for both commands:
 
